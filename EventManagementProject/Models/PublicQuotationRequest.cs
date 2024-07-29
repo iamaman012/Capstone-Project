@@ -12,7 +12,7 @@ namespace EventManagementProject.Models
         public string EventName { get; set; }
         public string Host { get; set; }
         public string Description { get; set; }
-        public string Category { get; set; }
+        
         public int TotalSeats { get; set; }
         public string ImageURL { get; set; }
         public double TicketPrice { get; set; }

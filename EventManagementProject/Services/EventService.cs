@@ -58,5 +58,43 @@ namespace EventManagementProject.Services
                 throw new Exception(ex.Message);
             }
         }
+
+        public async  Task<IEnumerable<EventListDTO>> GetAllPublicEvents()
+        {
+            try
+            {
+                var events = await _eventRepo.GetAll();
+                events = events.Where(e => e.EventType == "Public");
+                return events.Select(e => new EventListDTO
+                {
+                    EventId = e.EventId,
+                    EventName = e.EventName,
+                    Description = e.Description,
+                    Category = e.Category,
+                    ImageURL = e.ImageURL,
+                    EventType = e.EventType,
+                    Theme = e.Theme
+                });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async   Task<int> GetEventIdByName(string eventName)
+        {
+            try
+            {   var newEvent = await  _eventRepo.GetAll();
+                var eventNameId = newEvent.Where(e => e.EventName == eventName).FirstOrDefault();
+                return eventNameId.EventId;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+         }
+
+        
     }
 }

@@ -79,10 +79,19 @@ namespace EventManagementProject
 
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IEventRepository, EventRepository>();
+            builder.Services.AddScoped<IPvtQuotationRequestRepository, PvtQuotationRequestRepository>();
+            builder.Services.AddScoped<IPvtQuotationResponseRepository, PvtQuotationResponseRepository>();
+            builder.Services.AddScoped<IScheduledPrivateEventRepository, ScheduledPrivateEventRepository>();
+          
+
 
             builder.Services.AddScoped<IAuth, AuthService>();
             builder.Services.AddScoped<IToken, TokenService>();
             builder.Services.AddScoped<IEvent, EventService>();
+            builder.Services.AddScoped<IPvtQuotationRequestService, PvtQuotationRequestService>();
+            builder.Services.AddScoped<IPvtQuotationResponseService, PvtQuotationResponseService>();
+            builder.Services.AddScoped<ISchedulePrivateEventService,ScheduledPrivateEventService>();
+           
 
 
 

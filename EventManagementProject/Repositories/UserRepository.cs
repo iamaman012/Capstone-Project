@@ -9,6 +9,36 @@ namespace EventManagementProject.Repositories
     {
         public UserRepository(EventManagementContext context) : base(context) { }
 
+        public async Task<IEnumerable<PrivateQuotationResponse>> GetQuotationResponseByUserId(int userId)
+        {
+            try
+            {
+                var user = await _context.Users
+                    .Include(u => u.PrivateQuotationRequests)
+                        .ThenInclude(pqr => pqr.PrivateQuotationResponse)
+                     .Include(u=>u.PrivateQuotationRequests)
+                        .ThenInclude(e=>e.Event)
+                    
+                    .FirstOrDefaultAsync(u => u.UserId == userId);
+
+                if (user == null)
+                {
+                    return Enumerable.Empty<PrivateQuotationResponse>();
+                }
+
+                var privateQuotationResponses = user.PrivateQuotationRequests
+                    .Select(pqr => pqr.PrivateQuotationResponse)
+                    .Where(pqr => pqr != null)
+                    .ToList();
+
+                return privateQuotationResponses;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<User> GetUserByEmail(string email)
         {
             User? user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
