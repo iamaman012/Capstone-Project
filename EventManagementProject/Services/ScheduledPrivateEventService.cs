@@ -38,6 +38,32 @@ namespace EventManagementProject.Services
             }
         }
 
+        public async Task<IEnumerable<ReturnSchedulePrivateEventDTO>> GetAllScheduledPrivateEvent()
+        {
+            try
+            {
+                var scheduledEvents = await _scheduledPrivateEventRepository.GetScheduledPrivateEvents();
+                var privateScheduledEvents = scheduledEvents.Select(scheduledEvent => new ReturnSchedulePrivateEventDTO
+                {
+                    ScheduledPrivateEventId = scheduledEvent.ScheduledPrivateEventId,
+                    EventName = scheduledEvent.Event.EventName,
+                    QuotatedAmount = scheduledEvent.PrivateQuotationRequest.PrivateQuotationResponse.QuotedAmount,
+                    EventStartDate = scheduledEvent.PrivateQuotationRequest.EventStartDate,
+                    EventEndDate = scheduledEvent.PrivateQuotationRequest.EventEndDate,
+                    EventTiming = scheduledEvent.PrivateQuotationRequest.EventTiming,
+                    VenueType = scheduledEvent.PrivateQuotationRequest.VenueType,
+                    ResponseMessage = scheduledEvent.PrivateQuotationRequest.PrivateQuotationResponse.ResponseMessage,
+                    UserName = scheduledEvent.User.FullName,
+                    UserEmail = scheduledEvent.User.Email,
+                });
+                return privateScheduledEvents;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<IEnumerable<ReturnSchedulePrivateEventDTO>> GetScheduledEventByUserId(int userId)
         {
             try
@@ -53,6 +79,9 @@ namespace EventManagementProject.Services
                     EventEndDate = scheduledEvent.PrivateQuotationRequest.EventEndDate,
                     EventTiming = scheduledEvent.PrivateQuotationRequest.EventTiming,
                     VenueType = scheduledEvent.PrivateQuotationRequest.VenueType,
+                    ResponseMessage = scheduledEvent.PrivateQuotationRequest.PrivateQuotationResponse.ResponseMessage,
+                    UserEmail = scheduledEvent.User.Email,
+                    UserName = scheduledEvent.User.FullName,
                 });
 
                 

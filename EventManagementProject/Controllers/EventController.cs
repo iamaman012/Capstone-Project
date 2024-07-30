@@ -104,5 +104,19 @@ namespace EventManagementProject.Controllers
             }
         }
 
+        [HttpGet("get/scheduled/pvt")]
+        public async Task<IActionResult> GetAllScheduledPrivateEvent()
+        {
+            try
+            {
+                var scheduledEvents = await _schedulePrivateEventService.GetAllScheduledPrivateEvent();
+                return Ok(scheduledEvents);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

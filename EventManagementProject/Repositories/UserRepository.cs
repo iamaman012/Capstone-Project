@@ -9,35 +9,49 @@ namespace EventManagementProject.Repositories
     {
         public UserRepository(EventManagementContext context) : base(context) { }
 
-        public async Task<IEnumerable<PrivateQuotationResponse>> GetQuotationResponseByUserId(int userId)
+        public async Task<IEnumerable<C>> GetQuotationResponseByUserId<C>(int userId, string eventType) where C : class
         {
             try
             {
                 var user = await _context.Users
                     .Include(u => u.PrivateQuotationRequests)
                         .ThenInclude(pqr => pqr.PrivateQuotationResponse)
-                     .Include(u=>u.PrivateQuotationRequests)
-                        .ThenInclude(e=>e.Event)
-                    
+                    .Include(u => u.PrivateQuotationRequests)
+                        .ThenInclude(e => e.Event)
+                    .Include(u => u.PublicQuotationRequests)
+                        .ThenInclude(pqr => pqr.PublicQuotationResponse)
+                    .Include(u => u.PublicQuotationRequests)
+                        .ThenInclude(e => e.Event)
                     .FirstOrDefaultAsync(u => u.UserId == userId);
 
                 if (user == null)
                 {
-                    return Enumerable.Empty<PrivateQuotationResponse>();
+                    return Enumerable.Empty<C>();
                 }
 
-                var privateQuotationResponses = user.PrivateQuotationRequests
-                    .Select(pqr => pqr.PrivateQuotationResponse)
-                    .Where(pqr => pqr != null)
-                    .ToList();
-
-                return privateQuotationResponses;
+                if (eventType == "Public")
+                {
+                    var publicQuotationResponses = user.PublicQuotationRequests
+                        .Select(pqr => pqr.PublicQuotationResponse as C)
+                        .Where(pqr => pqr != null)
+                        .ToList();
+                    return publicQuotationResponses;
+                }
+                else
+                {
+                    var privateQuotationResponses = user.PrivateQuotationRequests
+                        .Select(pqr => pqr.PrivateQuotationResponse as C)
+                        .Where(pqr => pqr != null)
+                        .ToList();
+                    return privateQuotationResponses;
+                }
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
+
 
         public async Task<User> GetUserByEmail(string email)
         {

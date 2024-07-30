@@ -44,7 +44,7 @@ namespace EventManagementProject.Services
         {
             try
             {
-                var responses = await _userRepository.GetQuotationResponseByUserId(userId);
+                var responses = await _userRepository.GetQuotationResponseByUserId<PrivateQuotationResponse>(userId,"Private");
                 var returnPvtQuotationResponses = responses.Select(response => new ReturnPvtQuotationResponseDTO
                 {
                     PrivateQuotationResponseId = response.PrivateQuotationResponseId,

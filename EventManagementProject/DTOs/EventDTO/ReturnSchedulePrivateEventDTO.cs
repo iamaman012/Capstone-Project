@@ -9,6 +9,12 @@
         public DateTime EventEndDate { get; set; }
         public string EventTiming { get; set; }
 
+        public string ResponseMessage { get; set; } 
+
+        public string UserName { get; set; }
+
+        public string UserEmail { get; set; }   
+
         public string VenueType { get; set; }
     }
 }

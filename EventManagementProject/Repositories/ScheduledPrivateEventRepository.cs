@@ -18,7 +18,25 @@ namespace EventManagementProject.Repositories
                 var scheduledEvents = await  _context.ScheduledPrivateEvents.Include(spe => spe.PrivateQuotationRequest)
                     .ThenInclude(pqr => pqr.PrivateQuotationResponse)
                     .Include(spe=>spe.Event)
+                    .Include(spe=>spe.User)
                     .Where(x => x.UserId == userId).ToListAsync();
+                return scheduledEvents;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<List<ScheduledPrivateEvent>> GetScheduledPrivateEvents()
+        {
+            try
+            {
+                var scheduledEvents = await _context.ScheduledPrivateEvents.Include(spe=>spe.PrivateQuotationRequest)
+                    .ThenInclude(pqr => pqr.PrivateQuotationResponse)
+                    .Include(spe => spe.Event)
+                    .Include(spe => spe.User).
+                    ToListAsync();
                 return scheduledEvents;
             }
             catch (Exception ex)

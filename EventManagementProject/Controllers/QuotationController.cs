@@ -11,13 +11,17 @@ namespace EventManagementProject.Controllers
     {
         private readonly IPvtQuotationRequestService _pvtQuotationRequestService;
         private readonly  IPvtQuotationResponseService _pvtQuotationResponseService;
-       
+        private readonly IPubQuotationRequestService _pubQuotationRequestService;
+        private readonly IPubQuotationResponseService _pubQuotationResponseService;
 
-        public QuotationController(IPvtQuotationRequestService pvtQuotationRequestService, IPvtQuotationResponseService pvtQuotationResponseService)
+
+        public QuotationController(IPvtQuotationRequestService pvtQuotationRequestService, IPvtQuotationResponseService pvtQuotationResponseService,IPubQuotationRequestService pubQuotationRequestService,IPubQuotationResponseService pubQuotationResponseService)
         {
             _pvtQuotationRequestService = pvtQuotationRequestService;
             _pvtQuotationResponseService = pvtQuotationResponseService;
-           
+            _pubQuotationRequestService = pubQuotationRequestService;
+            _pubQuotationResponseService = pubQuotationResponseService;
+
         }
 
         [HttpPost("add/pvt")]
@@ -75,7 +79,67 @@ namespace EventManagementProject.Controllers
                 throw new Exception(ex.Message);
             }
         }
-      
+
+        [HttpGet("pub/response/ByuserId")]
+        public async Task<IActionResult> GetPublicQuotationResponseByUserId(int userId)
+        {
+            try
+            {
+                var responses = await _pubQuotationResponseService.GetPubQuotationResponseByUserId(userId);
+                return Ok(responses);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+
+        [HttpPost("add/pub")]
+        public async Task<IActionResult> AddPubQuotationRequest(AddPubQuotationRequestDTO pubQuotationRequestDto)
+        {
+            try
+            {
+                await _pubQuotationRequestService.AddPubQuotationRequest(pubQuotationRequestDto);
+                return Ok("Public Quotation Request Added Successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("/return/pub")]
+        public async Task<IActionResult> ReturnPubQuotation()
+        {
+            try
+            {
+                var responses = await _pubQuotationRequestService.ReturnPubQuotation();
+                return Ok(responses);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+
+        [HttpPost("add/pub/response")]
+        public async Task<IActionResult> AddPubQuotationResponse(PubQuotationResponseDTO pubQuotationResponseDTO)
+        {
+            try
+            {
+                await _pubQuotationResponseService.AddPubQuotationResponse(pubQuotationResponseDTO);
+                return Ok("Public Quotation Response Added Successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
 
     }
 }

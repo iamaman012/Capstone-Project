@@ -7,6 +7,9 @@ namespace EventManagementProject.Interfaces.Repository
         public Task<User> GetUserByEmail(string email);
         public Task<User> GetUserByEmailWithUserCredential(string email);
 
-        public Task<IEnumerable<PrivateQuotationResponse>> GetQuotationResponseByUserId(int userId);
+        
+        public Task<IEnumerable<C>> GetQuotationResponseByUserId<C>(int userId, string eventType) where C : class;
+       
+
     }
 }

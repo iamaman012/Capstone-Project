@@ -82,7 +82,9 @@ namespace EventManagementProject
             builder.Services.AddScoped<IPvtQuotationRequestRepository, PvtQuotationRequestRepository>();
             builder.Services.AddScoped<IPvtQuotationResponseRepository, PvtQuotationResponseRepository>();
             builder.Services.AddScoped<IScheduledPrivateEventRepository, ScheduledPrivateEventRepository>();
-          
+            builder.Services.AddScoped<IPubQuotationRequestRepository, PubQuotationRequestRepository>();
+            builder.Services.AddScoped<IPubQuotationResponseRepository, PubQuotationResponseRepository>();
+
 
 
             builder.Services.AddScoped<IAuth, AuthService>();
@@ -91,7 +93,9 @@ namespace EventManagementProject
             builder.Services.AddScoped<IPvtQuotationRequestService, PvtQuotationRequestService>();
             builder.Services.AddScoped<IPvtQuotationResponseService, PvtQuotationResponseService>();
             builder.Services.AddScoped<ISchedulePrivateEventService,ScheduledPrivateEventService>();
-           
+            builder.Services.AddScoped<IPubQuotationRequestService, PubQuotationRequestService>();
+            builder.Services.AddScoped<IPubQuotationResponseService, PubQuotationResponseService>();
+
 
 
 
