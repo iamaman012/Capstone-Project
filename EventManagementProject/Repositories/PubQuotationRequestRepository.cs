@@ -10,6 +10,19 @@ namespace EventManagementProject.Repositories
         {
         }
 
+        public async  Task<int> GetTotalSeats(int id)
+        {
+            try
+            {
+                var quotation = await _context.PublicQuotationRequests.FindAsync(id);
+                return quotation.TotalSeats;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task UpdateQuotationStatus(int id, string status)
         {
             try

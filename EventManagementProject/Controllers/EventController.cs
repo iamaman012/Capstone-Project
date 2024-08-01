@@ -13,11 +13,16 @@ namespace EventManagementProject.Controllers
     public class EventController : ControllerBase
     {
         private readonly IEvent _eventService;
-        private readonly ISchedulePrivateEventService _schedulePrivateEventService;
-        public EventController(IEvent eventService, ISchedulePrivateEventService schedulePrivateEventService)
+        private readonly ISchedulePrivateEventService _schedulePublicEventService;
+        private readonly IScheduledPublicEventService _scheduledPublicEventService;
+       
+        public EventController(IEvent eventService, ISchedulePrivateEventService schedulePrivateEventService
+            ,IScheduledPublicEventService scheduledPublicEventService)
         {
             _eventService = eventService;
-            _schedulePrivateEventService = schedulePrivateEventService;
+            _schedulePublicEventService = schedulePrivateEventService;
+            _scheduledPublicEventService = scheduledPublicEventService;
+            
         }
 
         [HttpPost("add")]
@@ -67,7 +72,7 @@ namespace EventManagementProject.Controllers
         {
             try
             {
-                await _schedulePrivateEventService.AddSchedulePrivateEvent(dto);
+                await _schedulePublicEventService.AddSchedulePublicEvent(dto);
                 return Ok("Scheduled Private Event Added Successfully");
             }
             catch (Exception ex)
@@ -81,7 +86,7 @@ namespace EventManagementProject.Controllers
         {
             try
             {
-                var scheduledEvents = await _schedulePrivateEventService.GetScheduledEventByUserId(userId);
+                var scheduledEvents = await _schedulePublicEventService.GetScheduledEventByUserId(userId);
                 return Ok(scheduledEvents);
             }
             catch (Exception ex)
@@ -109,7 +114,7 @@ namespace EventManagementProject.Controllers
         {
             try
             {
-                var scheduledEvents = await _schedulePrivateEventService.GetAllScheduledPrivateEvent();
+                var scheduledEvents = await _schedulePublicEventService.GetAllScheduledPrivateEvent();
                 return Ok(scheduledEvents);
             }
             catch (Exception ex)
@@ -117,6 +122,48 @@ namespace EventManagementProject.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpPost("add/scheduled/pub/")]
+        public async Task<IActionResult> AddScheduledPublicEvents(AddScheduledPublicEventDTO dto)
+        {
+            try
+            {
+                await _scheduledPublicEventService.AddScheduledPublicEvent(dto);
+                return Ok("Scheduled Private Event Added Successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("get/scheduled/pub/ByuserId")]
+        public async Task<IActionResult> GetScheduledPublicEventByUserId(int userId)
+        {
+            try
+            {
+                var scheduledEvents = await _scheduledPublicEventService.GetScheduledEventByUserId(userId);
+                return Ok(scheduledEvents);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("getAll/scheduled/pub")]
+        public async Task<IActionResult> GetAllScheduledPublicEvent()
+        {
+            try
+            {
+                var scheduledEvents = await _scheduledPublicEventService.GetAllScheduledPublicEvent();
+                return Ok(scheduledEvents);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
 
     }
 }

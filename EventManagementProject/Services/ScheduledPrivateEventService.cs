@@ -17,7 +17,7 @@ namespace EventManagementProject.Services
             _pvtQuotationResponseRepository = pvtQuotationResponseRepository;
             _eventRepository = eventRepository;
         }
-        public async Task AddSchedulePrivateEvent(AddScheduledPrivateEventDTO addScheduledPrivateEventDTO)
+        public async Task AddSchedulePublicEvent(AddScheduledPrivateEventDTO addScheduledPrivateEventDTO)
         {
             try
             {

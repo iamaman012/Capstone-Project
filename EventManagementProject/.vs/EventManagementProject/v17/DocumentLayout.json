@@ -3,84 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\dtos\\eventdto\\addscheduledpubliceventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:dtos\\eventdto\\addscheduledpubliceventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\interfaces\\repository\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:interfaces\\repository\\iticketrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\dtos\\eventdto\\addscheduledprivateeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:dtos\\eventdto\\addscheduledprivateeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\scheduledpublicevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\scheduledpublicevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\scheduledprivateevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\scheduledprivateevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\services\\scheduledprivateeventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:services\\scheduledprivateeventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Migrations\\20240730112532_Public Scheduled Event Model Changed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240730112532_Public Scheduled Event Model Changed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\dtos\\quotationdto.cs\\returnpubquotationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:dtos\\quotationdto.cs\\returnpubquotationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\publicquotationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\publicquotationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\publicquotationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\publicquotationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\services\\pubquotationresponseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:services\\pubquotationresponseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\services\\scheduledpubliceventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:services\\scheduledpubliceventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\controllers\\quotationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:controllers\\quotationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\dtos\\eventdto\\returnschedulepubliceventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:dtos\\eventdto\\returnschedulepubliceventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\services\\pvtquotationresponseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:services\\pvtquotationresponseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\services\\pubquotationrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:services\\pubquotationrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\services\\pvtquotationrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:services\\pvtquotationrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\repositories\\scheduledpubliceventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:repositories\\scheduledpubliceventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\interfaces\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:interfaces\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\services\\scheduledprivateeventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:services\\scheduledprivateeventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\interfaces\\services\\ipubquotationresponseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:interfaces\\services\\ipubquotationresponseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\privatequotationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\privatequotationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\publicquotationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\publicquotationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\repositories\\pvtquotationresponserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:repositories\\pvtquotationresponserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\dtos\\quotationdto.cs\\returnpvtquotationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:dtos\\quotationdto.cs\\returnpvtquotationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\models\\privatequotationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:models\\privatequotationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\interfaces\\services\\ischeduledpubliceventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:interfaces\\services\\ischeduledpubliceventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\interfaces\\services\\ischeduleprivateeventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:interfaces\\services\\ischeduleprivateeventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\interfaces\\repository\\ischeduledpubliceventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:interfaces\\repository\\ischeduledpubliceventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\repositories\\scheduledprivateeventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:repositories\\scheduledprivateeventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|c:\\users\\vc\\desktop\\capstone project\\eventmanagementproject\\dtos\\eventdto\\returnscheduleprivateeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17633C86-54D6-4E69-BDB2-5B12B2F55D12}|EventManagementProject.csproj|solutionrelative:dtos\\eventdto\\returnscheduleprivateeventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,46 +94,202 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddScheduledPrivateEventDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\AddScheduledPrivateEventDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\EventDTO\\AddScheduledPrivateEventDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\AddScheduledPrivateEventDTO.cs",
-              "RelativeToolTip": "DTOs\\EventDTO\\AddScheduledPrivateEventDTO.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAQAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:31:19.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddScheduledPublicEventDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\AddScheduledPublicEventDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\EventDTO\\AddScheduledPublicEventDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\AddScheduledPublicEventDTO.cs",
-              "RelativeToolTip": "DTOs\\EventDTO\\AddScheduledPublicEventDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA5AAAA",
+              "Title": "ITicketRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Repository\\ITicketRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repository\\ITicketRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Repository\\ITicketRepository.cs*",
+              "RelativeToolTip": "Interfaces\\Repository\\ITicketRepository.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:31:13.882Z",
+              "WhenOpened": "2024-08-01T06:01:16.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20240730112532_Public Scheduled Event Model Changed.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Migrations\\20240730112532_Public Scheduled Event Model Changed.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240730112532_Public Scheduled Event Model Changed.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Migrations\\20240730112532_Public Scheduled Event Model Changed.cs",
-              "RelativeToolTip": "Migrations\\20240730112532_Public Scheduled Event Model Changed.cs",
+              "DocumentIndex": 4,
+              "Title": "PublicQuotationResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationResponse.cs",
+              "RelativeDocumentMoniker": "Models\\PublicQuotationResponse.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationResponse.cs",
+              "RelativeToolTip": "Models\\PublicQuotationResponse.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T05:09:05.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\Ticket.cs",
+              "RelativeToolTip": "Models\\Ticket.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T05:08:53.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PrivateQuotationResponse.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PrivateQuotationResponse.cs",
+              "RelativeDocumentMoniker": "Models\\PrivateQuotationResponse.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PrivateQuotationResponse.cs",
+              "RelativeToolTip": "Models\\PrivateQuotationResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:25:32.357Z",
+              "WhenOpened": "2024-07-31T06:55:24.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Controllers\\EventController.cs",
+              "RelativeToolTip": "Controllers\\EventController.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAswKQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:47:40.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PrivateQuotationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PrivateQuotationRequest.cs",
+              "RelativeDocumentMoniker": "Models\\PrivateQuotationRequest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PrivateQuotationRequest.cs",
+              "RelativeToolTip": "Models\\PrivateQuotationRequest.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:41:23.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PubQuotationRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PubQuotationRequestService.cs",
+              "RelativeDocumentMoniker": "Services\\PubQuotationRequestService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PubQuotationRequestService.cs",
+              "RelativeToolTip": "Services\\PubQuotationRequestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:39:35.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ScheduledPublicEventService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\ScheduledPublicEventService.cs",
+              "RelativeDocumentMoniker": "Services\\ScheduledPublicEventService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\ScheduledPublicEventService.cs",
+              "RelativeToolTip": "Services\\ScheduledPublicEventService.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAkwHYAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:31:47.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IScheduledPublicEventService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Services\\IScheduledPublicEventService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\IScheduledPublicEventService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Services\\IScheduledPublicEventService.cs",
+              "RelativeToolTip": "Interfaces\\Services\\IScheduledPublicEventService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:31:25.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ISchedulePrivateEventService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Services\\ISchedulePrivateEventService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\ISchedulePrivateEventService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Services\\ISchedulePrivateEventService.cs",
+              "RelativeToolTip": "Interfaces\\Services\\ISchedulePrivateEventService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:31:20.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ScheduledPrivateEventService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\ScheduledPrivateEventService.cs",
+              "RelativeDocumentMoniker": "Services\\ScheduledPrivateEventService.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\ScheduledPrivateEventService.cs",
+              "RelativeToolTip": "Services\\ScheduledPrivateEventService.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:25:23.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PublicQuotationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationRequest.cs",
+              "RelativeDocumentMoniker": "Models\\PublicQuotationRequest.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationRequest.cs",
+              "RelativeToolTip": "Models\\PublicQuotationRequest.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:24:30.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ScheduledPrivateEventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\ScheduledPrivateEventRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ScheduledPrivateEventRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\ScheduledPrivateEventRepository.cs",
+              "RelativeToolTip": "Repositories\\ScheduledPrivateEventRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:22:31.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReturnSchedulePrivateEventDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\ReturnSchedulePrivateEventDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\EventDTO\\ReturnSchedulePrivateEventDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\ReturnSchedulePrivateEventDTO.cs",
+              "RelativeToolTip": "DTOs\\EventDTO\\ReturnSchedulePrivateEventDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:20:04.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReturnSchedulePublicEventDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\ReturnSchedulePublicEventDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\EventDTO\\ReturnSchedulePublicEventDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\EventDTO\\ReturnSchedulePublicEventDTO.cs",
+              "RelativeToolTip": "DTOs\\EventDTO\\ReturnSchedulePublicEventDTO.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwBAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T06:19:59.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -151,217 +299,35 @@
               "RelativeDocumentMoniker": "Models\\ScheduledPublicEvent.cs",
               "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\ScheduledPublicEvent.cs",
               "RelativeToolTip": "Models\\ScheduledPublicEvent.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBQAAAAIAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:16:31.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ScheduledPrivateEvent.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\ScheduledPrivateEvent.cs",
-              "RelativeDocumentMoniker": "Models\\ScheduledPrivateEvent.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\ScheduledPrivateEvent.cs",
-              "RelativeToolTip": "Models\\ScheduledPrivateEvent.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:16:28.833Z",
+              "WhenOpened": "2024-07-31T06:04:58.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "PublicQuotationResponse.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationResponse.cs",
-              "RelativeDocumentMoniker": "Models\\PublicQuotationResponse.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationResponse.cs",
-              "RelativeToolTip": "Models\\PublicQuotationResponse.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Title": "ScheduledPublicEventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\ScheduledPublicEventRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ScheduledPublicEventRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\ScheduledPublicEventRepository.cs",
+              "RelativeToolTip": "Repositories\\ScheduledPublicEventRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA/wCUAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T11:05:07.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Repository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\Repository\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Repository\\IUserRepository.cs",
-              "RelativeToolTip": "Interfaces\\Repository\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABpAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:45:32.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IPubQuotationResponseService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Services\\IPubQuotationResponseService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\Services\\IPubQuotationResponseService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Services\\IPubQuotationResponseService.cs",
-              "RelativeToolTip": "Interfaces\\Services\\IPubQuotationResponseService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:41:53.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PvtQuotationRequestService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PvtQuotationRequestService.cs",
-              "RelativeDocumentMoniker": "Services\\PvtQuotationRequestService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PvtQuotationRequestService.cs",
-              "RelativeToolTip": "Services\\PvtQuotationRequestService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:40:57.481Z",
+              "WhenOpened": "2024-07-31T06:02:32.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "PublicQuotationRequest.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationRequest.cs",
-              "RelativeDocumentMoniker": "Models\\PublicQuotationRequest.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\PublicQuotationRequest.cs",
-              "RelativeToolTip": "Models\\PublicQuotationRequest.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAswAAAAAAAAAAA",
+              "Title": "IScheduledPublicEventRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Repository\\IScheduledPublicEventRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repository\\IScheduledPublicEventRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Interfaces\\Repository\\IScheduledPublicEventRepository.cs",
+              "RelativeToolTip": "Interfaces\\Repository\\IScheduledPublicEventRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:38:13.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:38:02.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABAAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:37:21.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReturnPubQuotationResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\QuotationDTO.cs\\ReturnPubQuotationResponseDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\QuotationDTO.cs\\ReturnPubQuotationResponseDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\QuotationDTO.cs\\ReturnPubQuotationResponseDTO.cs",
-              "RelativeToolTip": "DTOs\\QuotationDTO.cs\\ReturnPubQuotationResponseDTO.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAgwAgAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:31:44.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ReturnPvtQuotationResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\QuotationDTO.cs\\ReturnPvtQuotationResponseDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\QuotationDTO.cs\\ReturnPvtQuotationResponseDTO.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\DTOs\\QuotationDTO.cs\\ReturnPvtQuotationResponseDTO.cs",
-              "RelativeToolTip": "DTOs\\QuotationDTO.cs\\ReturnPvtQuotationResponseDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:29:17.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PubQuotationResponseService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PubQuotationResponseService.cs",
-              "RelativeDocumentMoniker": "Services\\PubQuotationResponseService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PubQuotationResponseService.cs",
-              "RelativeToolTip": "Services\\PubQuotationResponseService.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAywCoAAABlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:28:58.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PvtQuotationResponseService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PvtQuotationResponseService.cs",
-              "RelativeDocumentMoniker": "Services\\PvtQuotationResponseService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\PvtQuotationResponseService.cs",
-              "RelativeToolTip": "Services\\PvtQuotationResponseService.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwDcAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:28:34.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PvtQuotationResponseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\PvtQuotationResponseRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\PvtQuotationResponseRepository.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Repositories\\PvtQuotationResponseRepository.cs",
-              "RelativeToolTip": "Repositories\\PvtQuotationResponseRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:28:32.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "QuotationController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Controllers\\QuotationController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuotationController.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Controllers\\QuotationController.cs",
-              "RelativeToolTip": "Controllers\\QuotationController.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAswFcAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:27:27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ScheduledPrivateEventService.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\ScheduledPrivateEventService.cs",
-              "RelativeDocumentMoniker": "Services\\ScheduledPrivateEventService.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Services\\ScheduledPrivateEventService.cs",
-              "RelativeToolTip": "Services\\ScheduledPrivateEventService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:27:04.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\VC\\Desktop\\Capstone Project\\EventManagementProject\\Controllers\\EventController.cs",
-              "RelativeToolTip": "Controllers\\EventController.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAwwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T10:26:42.798Z",
+              "WhenOpened": "2024-07-31T05:31:47.577Z",
               "EditorCaption": ""
             }
           ]

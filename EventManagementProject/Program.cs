@@ -84,6 +84,7 @@ namespace EventManagementProject
             builder.Services.AddScoped<IScheduledPrivateEventRepository, ScheduledPrivateEventRepository>();
             builder.Services.AddScoped<IPubQuotationRequestRepository, PubQuotationRequestRepository>();
             builder.Services.AddScoped<IPubQuotationResponseRepository, PubQuotationResponseRepository>();
+            builder.Services.AddScoped<IScheduledPublicEventRepository, ScheduledPublicEventRepository>();
 
 
 
@@ -95,6 +96,7 @@ namespace EventManagementProject
             builder.Services.AddScoped<ISchedulePrivateEventService,ScheduledPrivateEventService>();
             builder.Services.AddScoped<IPubQuotationRequestService, PubQuotationRequestService>();
             builder.Services.AddScoped<IPubQuotationResponseService, PubQuotationResponseService>();
+            builder.Services.AddScoped<IScheduledPublicEventService, ScheduledPublicEventService>();
 
 
 

@@ -7,5 +7,8 @@
         public int PublicQuotationResponseId { get; set; }
         public int PublicQuotationRequestId { get; set; }
         public int UserId { get; set; }
+
+        public string UserEventName { get; set; }
+
     }
 }
