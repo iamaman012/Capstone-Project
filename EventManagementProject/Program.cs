@@ -85,6 +85,7 @@ namespace EventManagementProject
             builder.Services.AddScoped<IPubQuotationRequestRepository, PubQuotationRequestRepository>();
             builder.Services.AddScoped<IPubQuotationResponseRepository, PubQuotationResponseRepository>();
             builder.Services.AddScoped<IScheduledPublicEventRepository, ScheduledPublicEventRepository>();
+            builder.Services.AddScoped<ITicketRepository, TicketRepository>();
 
 
 
@@ -97,6 +98,8 @@ namespace EventManagementProject
             builder.Services.AddScoped<IPubQuotationRequestService, PubQuotationRequestService>();
             builder.Services.AddScoped<IPubQuotationResponseService, PubQuotationResponseService>();
             builder.Services.AddScoped<IScheduledPublicEventService, ScheduledPublicEventService>();
+            builder.Services.AddScoped<ITicketService, TicketService>();
+            builder.Services.AddSingleton(new EmailService("smtp.gmail.com", 587, "amanagrawal2001.am.aa@gmail.com", "upjufivltdryzmyj"));
 
 
 

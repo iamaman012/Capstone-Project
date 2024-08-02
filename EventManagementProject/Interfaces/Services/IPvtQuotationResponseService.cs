@@ -1,4 +1,5 @@
 ﻿using EventManagementProject.DTOs.QuotationDTO.cs;
+using EventManagementProject.Models;
 
 namespace EventManagementProject.Interfaces.Services
 {
@@ -6,5 +7,6 @@ namespace EventManagementProject.Interfaces.Services
     {
         public Task AddQuotationResponse(PvtQuotationResponseDTO pvtQuotationResponseDTO);
         public Task<IEnumerable<ReturnPvtQuotationResponseDTO>> GetQuotationResponseByuserId(int userId);
+        public Task SendMail(PrivateQuotationRequest quotation);
     }
 }

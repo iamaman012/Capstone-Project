@@ -2,6 +2,8 @@
 using EventManagementProject.Interfaces.Repository;
 using EventManagementProject.Interfaces.Services;
 using EventManagementProject.Models;
+using System.Net.Sockets;
+using System.Runtime.Serialization;
 
 namespace EventManagementProject.Services
 {
@@ -9,10 +11,14 @@ namespace EventManagementProject.Services
     {
         private readonly IPvtQuotationRequestRepository _pvtQuotationRequestRepository;
         private readonly IEventRepository _eventRepository;
-        public PvtQuotationRequestService(IPvtQuotationRequestRepository pvtQuotationRequestRepository, IEventRepository eventRepository)
+        private readonly IUserRepository _userRepository;
+        private readonly EmailService _emailService;
+        public PvtQuotationRequestService(IPvtQuotationRequestRepository pvtQuotationRequestRepository, IEventRepository eventRepository,IUserRepository userRepository,EmailService emailService)
         {
             _pvtQuotationRequestRepository = pvtQuotationRequestRepository;
             _eventRepository = eventRepository;
+            _userRepository = userRepository;
+            _emailService = emailService;
         }
         public async Task AddPvtQuotationRequest(AddPvtQuotationRequestDTO pvtQuotationRequestDto)
         {
@@ -36,6 +42,8 @@ namespace EventManagementProject.Services
                 };
                 pvtQuotationRequest.QuotationStatus = "Pending";
                 await _pvtQuotationRequestRepository.Add(pvtQuotationRequest);
+                var user = await _userRepository.GetById(pvtQuotationRequestDto.UserId);
+                await SendMail(user, pvtQuotationRequest);
             }
             catch (Exception e)
             {
@@ -73,6 +81,29 @@ namespace EventManagementProject.Services
             catch(Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task SendMail(User user, PrivateQuotationRequest quotation)
+        {
+            try
+            {    var eventName = await _eventRepository.GetEventNameById(quotation.EventId);
+                string subject = "Quotation Applied Confirmation";
+                string body = $"Dear {user.FullName},\n\n" +
+                $"Thank you for appliying the quotation for the event '{eventName}'.\n\n" +
+                $"Quotation Id: {quotation.PrivateQuotationRequestId}\n\n" +
+
+                 $"We will review your quotation and reach out to you" +
+
+                $"We look forward to seeing you there!\n\n" +
+                "Best regards,\nEvent Management Team";
+
+
+                _emailService.SendEmail(user.Email, subject, body);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
             }
         }
     }

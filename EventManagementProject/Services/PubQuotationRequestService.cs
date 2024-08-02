@@ -37,7 +37,8 @@ namespace EventManagementProject.Services
                     Venue = pubQuotationRequestDto.Venue,
                     City = pubQuotationRequestDto.City,
                     CreatedDate = DateTime.Now,
-                    QuotationStatus = "Pending"
+                    QuotationStatus = "Pending",
+                    LocationDetails = pubQuotationRequestDto.Location
 
                 };
                 await _pubQuotationRequestRepository.Add(newPubQuotationRequest);
@@ -69,6 +70,7 @@ namespace EventManagementProject.Services
                     City = response.City,
                     RequestedDate = response.CreatedDate,
                     QuotationStatus= response.QuotationStatus,
+                    Location = response.LocationDetails
 
                 });
                 return returnResponses;

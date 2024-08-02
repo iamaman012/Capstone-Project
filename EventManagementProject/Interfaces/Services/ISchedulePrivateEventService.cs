@@ -1,4 +1,5 @@
 ﻿using EventManagementProject.DTOs.EventDTO;
+using EventManagementProject.Models;
 
 namespace EventManagementProject.Interfaces.Services
 {
@@ -7,5 +8,7 @@ namespace EventManagementProject.Interfaces.Services
         public Task AddSchedulePublicEvent(AddScheduledPrivateEventDTO addScheduledPrivateEventDTO);
         public Task<IEnumerable<ReturnSchedulePrivateEventDTO>> GetScheduledEventByUserId(int userId);
         public Task<IEnumerable<ReturnSchedulePrivateEventDTO>> GetAllScheduledPrivateEvent();
+
+        public Task SendMail(PrivateQuotationRequest quotation);
     }
 }

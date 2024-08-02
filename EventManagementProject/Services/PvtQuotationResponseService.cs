@@ -2,6 +2,7 @@
 using EventManagementProject.Interfaces.Repository;
 using EventManagementProject.Interfaces.Services;
 using EventManagementProject.Models;
+using EventManagementProject.Repositories;
 
 namespace EventManagementProject.Services
 {
@@ -10,11 +11,13 @@ namespace EventManagementProject.Services
         private readonly IPvtQuotationResponseRepository _pvtQuotationResponseRepository;
         private readonly IPvtQuotationRequestRepository _pvtQuotationRequestRepository;
         private readonly IUserRepository _userRepository;
-        public PvtQuotationResponseService(IPvtQuotationResponseRepository pvtQuotationResponseRepository, IPvtQuotationRequestRepository pvtQuotationRequestRepository, IUserRepository userRepository)
+        private readonly EmailService _emailService;
+        public PvtQuotationResponseService(IPvtQuotationResponseRepository pvtQuotationResponseRepository, IPvtQuotationRequestRepository pvtQuotationRequestRepository, IUserRepository userRepository,EmailService emailService)
         {
             _pvtQuotationResponseRepository = pvtQuotationResponseRepository;
             _pvtQuotationRequestRepository = pvtQuotationRequestRepository;
             _userRepository = userRepository;
+            _emailService = emailService;
         }
         public async Task AddQuotationResponse(PvtQuotationResponseDTO pvtQuotationResponseDTO)
         {
@@ -31,6 +34,8 @@ namespace EventManagementProject.Services
                 };
                 await _pvtQuotationResponseRepository.Add(pvtQuotationResponse);
                 await _pvtQuotationRequestRepository.UpdateQuotationStatus(pvtQuotationResponseDTO.PrivateQuotationRequestId, "Responded");
+                var quotation = await _pvtQuotationRequestRepository.GetQuotationById(pvtQuotationResponseDTO.PrivateQuotationRequestId);
+                await SendMail(quotation);
             }
             catch (Exception e)
             {
@@ -56,6 +61,26 @@ namespace EventManagementProject.Services
                 });
                 return returnPvtQuotationResponses;
 
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public async Task SendMail(PrivateQuotationRequest quotation)
+        {
+            try
+            {
+                string subject = "Quotation Accepted Confirmation";
+                string body = $"Dear {quotation.User.FullName},\n\n" +
+                $"Your Quotation has been Accepted for the event '{quotation.Event.EventName}'.\n\n" +
+                $"You can able to see the response on the portal.\n"+
+                $"We look forward to seeing you there!\n\n" +
+                "Best regards,\nEvent Management Team";
+
+
+                _emailService.SendEmail(quotation.User.Email, subject, body);
             }
             catch (Exception e)
             {

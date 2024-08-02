@@ -1,6 +1,11 @@
-﻿namespace EventManagementProject.Interfaces.Repository
+﻿using EventManagementProject.DTOs.TicketDTO;
+using EventManagementProject.Models;
+
+namespace EventManagementProject.Interfaces.Repository
 {
-    public class ITicketRepository
+    public interface ITicketRepository : IRepository<int, Ticket>
     {
+        public Task AddTicket(Ticket ticket);
+        public Task<List<Ticket>> GetTicketByuserid(int userId);
     }
 }

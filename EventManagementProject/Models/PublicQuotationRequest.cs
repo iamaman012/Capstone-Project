@@ -13,6 +13,8 @@ namespace EventManagementProject.Models
         public string Host { get; set; }
         public string Description { get; set; }
 
+        public string LocationDetails { get; set; }
+
         public string QuotationStatus { get; set; } 
 
         public int TotalSeats { get; set; }

@@ -7,5 +7,9 @@ namespace EventManagementProject.Interfaces.Repository
         public Task<List<ScheduledPublicEvent>> ScheduledPublicEventsByUserId(int userId);
 
         public Task<List<ScheduledPublicEvent>> GetAllScheduledPublicEvents();
+
+        public Task UpdateRemainigSeats(int id, int seats);
+
+        public Task<ScheduledPublicEvent> GetScheduledPublicEventById(int id );
     }
 }

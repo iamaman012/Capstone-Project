@@ -1,4 +1,5 @@
 ﻿using EventManagementProject.DTOs.QuotationDTO.cs;
+using EventManagementProject.Models;
 
 namespace EventManagementProject.Interfaces.Services
 {
@@ -6,5 +7,6 @@ namespace EventManagementProject.Interfaces.Services
     {
         public Task AddPubQuotationResponse(PubQuotationResponseDTO pubQuotationResponseDTO);
         public Task<IEnumerable<ReturnPubQuotationResponseDTO>> GetPubQuotationResponseByUserId(int userId);
+       
     }
 }

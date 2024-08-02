@@ -74,13 +74,14 @@ namespace EventManagementProject.Services
                     UserName = scheduledEvent.User.FullName,
                     UserEmail = scheduledEvent.User.Email,
 
-                    TotalSeats = scheduledEvent.RemainingSeats,
+                    TotalSeats = scheduledEvent.PublicQuotationRequest.TotalSeats,
                     TicketPrice = scheduledEvent.PublicQuotationRequest.TicketPrice,
                     RemainingSeats = scheduledEvent.RemainingSeats,
                     IsActive = scheduledEvent.IsActive,
                     City = scheduledEvent.PublicQuotationRequest.City,
                     ImageUrl = scheduledEvent.PublicQuotationRequest.ImageURL,
                     Description = scheduledEvent.PublicQuotationRequest.Description,
+                    Location = scheduledEvent.PublicQuotationRequest.LocationDetails,
                 });
                 return publicScheduledEvents;
             }
@@ -110,7 +111,7 @@ namespace EventManagementProject.Services
                     UserName = scheduledEvent.User.FullName,
                     UserEmail = scheduledEvent.User.Email,
                    
-                    TotalSeats = scheduledEvent.RemainingSeats,
+                    TotalSeats = scheduledEvent.PublicQuotationRequest.TotalSeats,
                     TicketPrice = scheduledEvent.PublicQuotationRequest.TicketPrice,
                     RemainingSeats = scheduledEvent.RemainingSeats,
                     IsActive = scheduledEvent.IsActive,

@@ -28,6 +28,24 @@ namespace EventManagementProject.Repositories
             }
         }
 
+        public async Task<ScheduledPublicEvent> GetScheduledPublicEventById(int id)
+        {
+            try
+            {
+                var scheduledEvent = await _context.ScheduledPublicEvents
+                    
+                    .Include(spe=>spe.PublicQuotationRequest)
+                    .FirstOrDefaultAsync(spe => spe.ScheduledPublicEventId == id);
+                return scheduledEvent;
+
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public async Task<List<ScheduledPublicEvent>> ScheduledPublicEventsByUserId(int userId)
         {
             try
@@ -45,6 +63,20 @@ namespace EventManagementProject.Repositories
             }
         }
 
+        public  async Task UpdateRemainigSeats(int id, int seats)
+        {
+            try
+            {
+                var scheduledPublicEvent = await _context.ScheduledPublicEvents.FirstOrDefaultAsync(spe => spe.ScheduledPublicEventId == id);
+                scheduledPublicEvent.RemainingSeats = scheduledPublicEvent.RemainingSeats - seats;
+                _context.ScheduledPublicEvents.Update(scheduledPublicEvent);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
     
 }
