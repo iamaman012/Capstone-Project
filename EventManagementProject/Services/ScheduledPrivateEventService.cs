@@ -63,6 +63,7 @@ namespace EventManagementProject.Services
                     ResponseMessage = scheduledEvent.PrivateQuotationRequest.PrivateQuotationResponse.ResponseMessage,
                     UserName = scheduledEvent.User.FullName,
                     UserEmail = scheduledEvent.User.Email,
+                    Location = scheduledEvent.PrivateQuotationRequest.LocationDetails
                 });
                 return privateScheduledEvents;
             }
@@ -90,6 +91,7 @@ namespace EventManagementProject.Services
                     ResponseMessage = scheduledEvent.PrivateQuotationRequest.PrivateQuotationResponse.ResponseMessage,
                     UserEmail = scheduledEvent.User.Email,
                     UserName = scheduledEvent.User.FullName,
+                    Location = scheduledEvent.PrivateQuotationRequest.LocationDetails
                 });
 
                 

@@ -16,5 +16,7 @@
         public string UserEmail { get; set; }   
 
         public string VenueType { get; set; }
+
+        public string Location { get; set; }
     }
 }

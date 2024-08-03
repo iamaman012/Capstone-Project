@@ -72,9 +72,10 @@ namespace EventManagementProject.Services
         {
             try
             {
-                string subject = "Quotation Accepted Confirmation";
+                string subject = "Request Accepted Confirmation";
                 string body = $"Dear {quotation.User.FullName},\n\n" +
-                $"Your Quotation has been Accepted for the event '{quotation.Event.EventName}'.\n\n" +
+                $"Your Request has been Accepted for the event '{quotation.Event.EventName}'.\n" +
+                $"The Quotatated Amount is {quotation.PrivateQuotationResponse.QuotedAmount}.\n" +
                 $"You can able to see the response on the portal.\n"+
                 $"We look forward to seeing you there!\n\n" +
                 "Best regards,\nEvent Management Team";

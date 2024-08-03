@@ -118,6 +118,7 @@ namespace EventManagementProject.Services
                     City = scheduledEvent.PublicQuotationRequest.City,
                     ImageUrl = scheduledEvent.PublicQuotationRequest.ImageURL,
                     Description = scheduledEvent.PublicQuotationRequest.Description,
+                    Location = scheduledEvent.PublicQuotationRequest.LocationDetails,
                 });
                 return publicScheduledEvents;
             }
