@@ -10,6 +10,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using System;
+using System.Threading.Tasks;
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 
 namespace EventManagementProject
 {
@@ -72,9 +76,24 @@ namespace EventManagementProject
 
              });
 
+            const string secretName1 = "dbconnectionstring";
+            
+            var keyVaultName = "dbstring-aman";
+            var kvUri = $"https://{keyVaultName}.vault.azure.net";
+
+            var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
+            Console.WriteLine($"Retrieving your secret from {keyVaultName}.");
+            var secret1 = client.GetSecret(secretName1);
+           
+            Console.WriteLine($"Your secret is '{secret1.Value.Value}'.");
+
+            //builder.Services.AddDbContext<EventManagementContext>(options =>
+            //{
+            //    options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
+            //});
             builder.Services.AddDbContext<EventManagementContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection"));
+                options.UseSqlServer(secret1.Value.Value);
             });
 
             builder.Services.AddScoped<IUserRepository, UserRepository>();

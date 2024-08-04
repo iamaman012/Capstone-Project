@@ -91,7 +91,8 @@ namespace EventManagementProject.Migrations
                     EventName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Host = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LocationDetails = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuotationStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TotalSeats = table.Column<int>(type: "int", nullable: false),
                     ImageURL = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TicketPrice = table.Column<double>(type: "float", nullable: false),
@@ -231,21 +232,9 @@ namespace EventManagementProject.Migrations
                     UserId = table.Column<int>(type: "int", nullable: false),
                     EventId = table.Column<int>(type: "int", nullable: false),
                     PublicQuotationRequestId = table.Column<int>(type: "int", nullable: false),
-                    EventName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Host = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImageURL = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TotalSeats = table.Column<int>(type: "int", nullable: false),
+                    UserEventName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RemainingSeats = table.Column<int>(type: "int", nullable: false),
-                    TicketPrice = table.Column<double>(type: "float", nullable: false),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Timing = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Venue = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    City = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
